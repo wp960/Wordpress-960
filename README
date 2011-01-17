@@ -1,0 +1,4 @@
+This theme is designed to integrate the 960 grid system design principles into WordPress site design and maintenance.
+
+This theme is currently limited to 960px width divided into 24 columns with 5 pixel margins on each column.
+I hope to increase the flexibility by taking advantage of the fluid width abilities of the 960 framework and adding a width option to the theme options screen.
