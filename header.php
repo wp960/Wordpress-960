@@ -3,7 +3,7 @@
     <title><?php wp_title(); ?></title>
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <link rel="alternate" type="application/rss+xml" title="Blog RSS Feed" id="blog_rss_feed" href="<?php bloginfo('rss2_url'); ?>"/>
-    <!-- Commense WordPress Header -->
+    <!-- Begin WordPress Header -->
     <?php wp_head(); ?>
     <!-- Complete WordPress Header -->
   </head>
