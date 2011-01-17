@@ -5,6 +5,16 @@
 
     class wordpress_960 {
 
+      public $header_menu = array(
+        'container'       => 'div',
+        'container_class' => 'grid_12'
+      );
+
+      public $footer_menu = array(
+        'container'       => 'div',
+        'container_class' => 'grid_12'
+      );
+
       # PHP 4 Constructor
       function wordpress_960() {
 
