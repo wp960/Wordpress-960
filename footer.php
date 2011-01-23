@@ -1,6 +1,13 @@
-    <div class="container_12">
-      <?php global $wordpress_960; ?>
-      <?php wp_nav_menu( $wordpress_960->footer_menu ); ?>
+      <?php
+          $args = array(
+              'sort_column' => 'menu_order, post_title',
+              'menu_class'  => 'sf-menu',
+              'echo'        => true,
+              'show_home'   => 'Blog',
+              'theme_location' => 'footer'
+          );
+          wp_nav_menu( $args );
+       ?>
     </div>
   </body>
 </html>

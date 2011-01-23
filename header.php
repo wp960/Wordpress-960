@@ -7,6 +7,17 @@
   </head>
   <body>
     <?php global $wordpress_960; ?>
-    <div class="container_12">
-      <?php wp_nav_menu( $wordpress_960->header_menu ); ?>
-    </div>
+    <div class="container_24">
+      <!-- menu? -->
+      <?php 
+      $args = array(
+          'sort_column' => 'menu_order, post_title',
+          'menu_class'  => 'sf-menu',
+          'echo'        => true,
+          'show_home'   => 'Blog',
+          'theme_location' => 'header'
+      );
+      wp_nav_menu( $args );
+      ?>
+      <!-- #wp960-menu-container -->
+      
