@@ -1,3 +1,5 @@
+# WordPress 960
+
 This theme is designed to integrate the 960 grid system design principles into WordPress site design and maintenance.
 
 This theme is currently limited to 960px width divided into 24 columns with 5 pixel margins on each column.
@@ -13,3 +15,11 @@ Once you have asigned these widgets to the home page container you will need to 
 
 If you use this theme; please report any issues so that we can continue to make this the definitive 960 grid theme for WordPress. 
 Feel free to contribute to or fork this repository, every little update helps.
+
+## TODO
+
+* TODO: Implement dynamic base width for the 960 Grid System.
+* TODO: Implement dynamic column amounts.
+* TODO: Add custom menus.
+* TODO: Add widget zones.
+* TODO: Implement updating system for 960 Grid System.

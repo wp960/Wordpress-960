@@ -1,11 +1,5 @@
 <?php
 
-# TODO: Implement dynamic base width for the 960 Grid System.
-# TODO: Implement dynamic column amounts.
-# TODO: Add custom menus.
-# TODO: Add widget zones.
-# TODO: Implement updating system for 960 Grid System.
-
 # Sanity check.
 if ( !class_exists( 'wordpress_960' ) ) {
 
