@@ -1,7 +1,7 @@
 <?php
 
 // Register the menus
-# This theme uses wp_nav_menu() in one location.
+add_theme_support('nav-menus');
 register_nav_menus( array(
 	'header' => __( 'Header Navigation', 'wp960' ),
 	'footer' => __( 'Footer Navigation', 'wp960' )

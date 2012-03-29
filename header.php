@@ -9,15 +9,9 @@
 	<body>
 		<?php global $wordpress_960; ?>
 		<div class="container_12">
-		<!-- menu? -->
-		<?php 
-			$args = array(
-			'sort_column' => 'menu_order, post_title',
-			'menu_class'  => 'sf-menu',
-			'echo'        => true,
-			'show_home'   => 'Blog',
-			'theme_location' => 'header'
-			);
-			wp_nav_menu( $args );
-		?>
-		<!-- #wp960-menu-container -->
+			<!-- Header Navigation -->
+			<?php wp_nav_menu( array(
+				'theme_location' => 'header',
+				'menu_class'    => 'nav-bar',
+				'container'     => 'nav'
+			) ); ?>
