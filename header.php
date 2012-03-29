@@ -9,9 +9,21 @@
 	<body>
 		<?php global $wordpress_960; ?>
 		<div class="container_12">
-			<!-- Header Navigation -->
-			<?php wp_nav_menu( array(
-				'theme_location' => 'header',
-				'menu_class'    => 'nav-bar',
-				'container'     => 'nav'
-			) ); ?>
+			<header>
+				<!-- Site Description & Title -->
+				<hgroup id="header">
+					<h1><a href="<?php echo site_url(); ?>"><?php bloginfo('title'); ?></a></h1>
+					<?php
+					$description = get_bloginfo('description');
+					if (! empty($description)) : ?>
+						<h4 class="subheader"><?php $description; ?></h4>
+					<?php endif; ?>
+				</hgroup>
+
+				<!-- Header Navigation -->
+				<?php wp_nav_menu( array(
+					'theme_location' => 'header',
+					'menu_class'    => 'nav-bar',
+					'container'     => 'nav'
+				) ); ?>
+			</header>
