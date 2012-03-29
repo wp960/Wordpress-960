@@ -4,6 +4,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title></title>
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen" />
+		<?php wp_head(); ?>
 	</head>
 	<body>
 		<?php global $wordpress_960; ?>
