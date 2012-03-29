@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<?php global $wordpress_960; ?>
-		<div class="container_24">
+		<div class="container_12">
 		<!-- menu? -->
 		<?php 
 			$args = array(
