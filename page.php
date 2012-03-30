@@ -4,9 +4,9 @@
 	<?php get_template_part( 'loop', 'page' ); ?>	
 </div>
 
-<div id="sidebar-blog" class="grid_4">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("sidebar-blog") ) : ?><?php endif; ?>
-</div>
+<aside id="sidebar-blog" class="grid_4">
+	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Right Sidebar') ) : ?><?php endif; ?>
+</aside>
 
 <div class="clear"></div>
 
