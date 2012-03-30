@@ -48,6 +48,53 @@ function theme_options_do_page() {
 					</td>
 				</tr>
 				
+				<!-- Sidebars -->
+				<?php 
+				$sidebar_options = array(
+					'none' => array(
+						'value' => 'none',
+						'label' => __( 'Single Column', '960gs' )
+					),
+					'left' => array(
+						'value' => 'left',
+						'label' => __( 'Left Sidebar', '960gs' )
+					),
+					'right' => array(
+						'value' => 'right',
+						'label' => __( 'Right Sidebar', '960gs' )
+					),
+					'both' => array(
+						'value' => 'both',
+						'label' => __( 'Three Columns ', '960gs' )
+					),
+				);
+				$sidebars = !empty($options['sidebars']) ? $options['sidebars'] : 'right';
+				?>
+				<tr valign="top"><th scope="row"><?php _e( 'Columns', '960gs' ); ?></th>
+					<td>
+						<fieldset><legend class="screen-reader-text"><span><?php _e( 'Columns', '960gs' ); ?></span></legend>
+						<?php
+							if ( ! isset( $checked ) )
+								$checked = '';
+							foreach ( $sidebar_options as $option ) {
+								$radio_setting = $sidebars;
+
+								if ( '' != $radio_setting ) {
+									if ( $sidebars == $option['value'] ) {
+										$checked = "checked=\"checked\"";
+									} else {
+										$checked = '';
+									}
+								}
+								?>
+								<label class="description"><input type="radio" name="960gs_theme_options[sidebars]" value="<?php esc_attr_e( $option['value'] ); ?>" <?php echo $checked; ?> /> <?php echo $option['label']; ?></label><br />
+								<?php
+							}
+						?>
+						</fieldset>
+					</td>
+				</tr>
+				
 			</table>
 
 			<p class="submit">
@@ -67,6 +114,12 @@ function theme_options_validate( $input ) {
 	if ( ! isset( $input['footer_navigation'] ) )
 		$input['footer_navigation'] = null;
 	$input['footer_navigation'] = ( $input['footer_navigation'] == 1 ? 1 : 0 );
+
+	// Our radio option must actually be in our array of radio options
+	if ( ! isset( $input['sidebars'] ) )
+		$input['sidebars'] = null;
+	if ( ! array_search( $input['sidebars'], array( 'none', 'right', 'left', 'both' ) ) )
+		$input['sidebars'] = null;
 
 	return $input;
 }

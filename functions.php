@@ -29,3 +29,54 @@ if ( !class_exists( 'wordpress_960' ) ) {
 if ( class_exists( 'wordpress_960' ) and !isset( $wordpress_960 ) ) {
 	$wordpress_960 = new wordpress_960();
 }
+
+/**
+ * Builds the correct amount of columns based on the theme options.
+ * @param string $loop (optional) Which loop to get the contents for
+ */
+if ( !function_exists( 'get_columns' ) ) {
+	function get_columns( $loop = 'index' ) {
+		$options = get_option( '960gs_theme_options' );
+		$sidebars = ! empty( $options['sidebars'] ) ? $options['sidebars'] : 'right';
+		$grid = 0;
+		
+		// Left sidebar
+		if ( 'left' === $sidebars or 'both' === $sidebars ) :
+			$grid = 'both' === $sidebars ? 3 : 4;
+			?>
+			<aside class="grid_<?php echo $grid; ?>">
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Left Sidebar') ) : ?>Left Sidebar<?php endif; ?>
+			</aside>
+		<?php endif;
+		
+		// Main content
+		switch ( $sidebars ) {
+			case 'left':
+			case 'right':
+				$grid = 8;
+				break;
+			case 'both':
+				$grid = 6;
+				break;
+			case 'none':
+			default:
+				$grid = 12;
+				break;
+		}
+		?>
+		<div id="wp960-blog-content" class="grid_<?php echo $grid; ?>">
+			<?php get_template_part( 'loop', $loop ); ?>
+		</div>
+		<?php
+		
+		// Right Sidebar
+		if ( 'right' === $sidebars or 'both' === $sidebars ) :
+			$grid = 'both' === $sidebars ? 3 : 4; ?>
+		<aside id="sidebar-blog" class="grid_<?php echo $grid; ?>">
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Right Sidebar') ) : ?><?php endif; ?>
+		</aside>
+		<?php endif; ?>
+		<div class="clear"></div>
+		<?php
+	}
+}
