@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="wp960-blog-content" class="grid_8">
-	<?php get_template_part( 'loop', 'index' ); ?>
+	<?php get_template_part( 'loop', 'page' ); ?>	
 </div>
 
 <div id="sidebar-blog" class="grid_4">

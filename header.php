@@ -23,7 +23,7 @@
 				<!-- Header Navigation -->
 				<?php wp_nav_menu( array(
 					'theme_location' => 'header',
-					'menu_class'    => 'nav-bar',
-					'container'     => 'nav'
+					'menu_class'     => 'nav-bar',
+					'container'      => 'nav'
 				) ); ?>
 			</header>
