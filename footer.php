@@ -3,6 +3,7 @@
 			<!-- Footer Widgets -->
 			<aside>
 				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer') ) : ?><?php endif; ?>
+				<div class="clear"></div>
 			</aside>
 
 			<!-- Footer Navigation -->
