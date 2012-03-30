@@ -1,1 +1,13 @@
-/* Custom styles goes here */
+/* --------------------------------
+   Basic Styles
+   -------------------------------- */
+
+nav {}
+	nav ul {
+		list-style-type: none;
+	}
+		nav ul li {
+			display: inline;
+			margin-left: 0;
+			margin-right: 0.5em;
+		}
