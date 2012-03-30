@@ -19,7 +19,4 @@ Feel free to contribute to or fork this repository, every little update helps.
 ## TODO
 
 * TODO: Implement dynamic base width for the 960 Grid System.
-* TODO: Implement dynamic column amounts.
-* TODO: Add custom menus.
-* TODO: Add widget zones.
 * TODO: Implement updating system for 960 Grid System.
