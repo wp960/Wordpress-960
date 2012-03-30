@@ -9,7 +9,8 @@
 	<body>
 		<?php global $wordpress_960; ?>
 		<div class="container_12">
-			<header>
+			<header class="grid_12">
+
 				<!-- Site Description & Title -->
 				<hgroup id="header">
 					<h1><a href="<?php echo site_url(); ?>"><?php bloginfo('title'); ?></a></h1>
@@ -26,4 +27,11 @@
 					'menu_class'     => 'nav-bar',
 					'container'      => 'nav'
 				) ); ?>
+
+				<!-- Header Widgets -->
+				<aside>
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header') ) : ?><?php endif; ?>
+				</aside>
+
 			</header>
+			<div class="clear"></div>
