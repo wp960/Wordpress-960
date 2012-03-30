@@ -1,4 +1,4 @@
-		<footer class="grid_12">
+<footer class="grid_12">
 
 			<!-- Footer Widgets -->
 			<aside>
@@ -7,11 +7,16 @@
 			</aside>
 
 			<!-- Footer Navigation -->
-			<?php wp_nav_menu( array(
-				'theme_location' => 'footer',
-				'menu_class'    => 'nav-bar',
-				'container'     => 'nav'
-			) ); ?>
+			<?php
+			$options = get_option( '960gs_theme_options' );
+			if ( $options['footer_navigation'] ) {
+				wp_nav_menu( array(
+					'theme_location' => 'footer',
+					'menu_class'    => 'nav-bar',
+					'container'     => 'nav'
+				) );
+			}
+			?>
 
 		</footer>
 
