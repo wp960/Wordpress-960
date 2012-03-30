@@ -18,6 +18,7 @@ if ( !class_exists( 'wordpress_960' ) ) {
 
 			include('functions/sidebars.php');
 			include('functions/menus.php');
+			include('functions/theme-options.php');
 
 		} # End Constructor
 
