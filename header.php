@@ -12,7 +12,7 @@
 			<header class="grid_12">
 
 				<!-- Site Description & Title -->
-				<hgroup id="header">
+				<hgroup id="header" class="grid_12">
 					<h1><a href="<?php echo site_url(); ?>"><?php bloginfo('title'); ?></a></h1>
 					<?php
 					$description = get_bloginfo('description');
@@ -20,19 +20,29 @@
 						<h4 class="subheader"><?php $description; ?></h4>
 					<?php endif; ?>
 				</hgroup>
+				<div class="clear"></div>
 
 				<!-- Header Navigation -->
-				<?php wp_nav_menu( array(
-					'theme_location' => 'header',
-					'menu_class'     => 'nav-bar',
-					'container'      => 'nav'
-				) ); ?>
+				<div class="grid_8 alpha">
+					<?php wp_nav_menu( array(
+						'theme_location' => 'header',
+						'menu_class'     => 'nav-bar',
+						'container'      => 'nav'
+					) ); ?>
+				</div>
+				
+				<!-- Search -->
+				<div class="grid_4 omega">
+					<?php get_search_form(); ?>
+				</div>
+				<div class="clear"></div>
 
 				<!-- Header Widgets -->
-				<aside>
+				<aside class="grid_12">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header') ) : ?><?php endif; ?>
 					<div class="clear"></div>
 				</aside>
+				<div class="clear"></div>
 
 			</header>
 			<div class="clear"></div>
