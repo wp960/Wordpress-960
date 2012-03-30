@@ -9,10 +9,10 @@
 	<body>
 		<?php global $wordpress_960; ?>
 		<div class="container_12">
-			<header class="grid_12">
+			<header>
 
 				<!-- Site Description & Title -->
-				<hgroup id="header" class="grid_12">
+				<hgroup id="header">
 					<h1><a href="<?php echo site_url(); ?>"><?php bloginfo('title'); ?></a></h1>
 					<?php
 					$description = get_bloginfo('description');
@@ -20,7 +20,6 @@
 						<h4 class="subheader"><?php $description; ?></h4>
 					<?php endif; ?>
 				</hgroup>
-				<div class="clear"></div>
 
 				<!-- Header Navigation -->
 				<div class="grid_8 alpha">
@@ -38,11 +37,10 @@
 				<div class="clear"></div>
 
 				<!-- Header Widgets -->
-				<aside class="grid_12">
+				<aside>
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header') ) : ?><?php endif; ?>
 					<div class="clear"></div>
 				</aside>
-				<div class="clear"></div>
 
 			</header>
 			<div class="clear"></div>
