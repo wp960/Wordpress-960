@@ -1,5 +1,5 @@
 <?php
 get_header();
-get_columns('archive');
+wp960_get_columns( 'archive' );
 get_footer();
 

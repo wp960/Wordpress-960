@@ -1,5 +1,5 @@
 <?php
 get_header();
-get_columns('index');
+wp960_get_columns( 'index' );
 get_footer();
 
