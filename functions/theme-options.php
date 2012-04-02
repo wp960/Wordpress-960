@@ -118,7 +118,7 @@ function theme_options_validate( $input ) {
 	// Our radio option must actually be in our array of radio options
 	if ( ! isset( $input['sidebars'] ) )
 		$input['sidebars'] = null;
-	if ( ! array_search( $input['sidebars'], array( 'none', 'right', 'left', 'both' ) ) )
+	if ( array_search( $input['sidebars'], array( 'none', 'right', 'left', 'both' ) ) === false )
 		$input['sidebars'] = null;
 
 	return $input;
