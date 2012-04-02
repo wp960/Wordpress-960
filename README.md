@@ -17,33 +17,33 @@ Feel free to contribute to or fork this repository, every little update helps.
 
 This theme is split up into tons of templates, which makes it easier to override just a single part of the theme rather than having to copy & paste a lot of code.
 
-**archive.php**
+### archive.php
 Main template for showing an archive page of posts, such as by date, category, tags or author.
 
-**content.php**
-**content-page.php**
-The __content-*.php__ templates display the actual post entries and the theme is built to handle post formats and will use the __content-(format name).php__ template if available, or fall back to the __content.php__ file.
+### content.php
+### content-page.php
+The __content-*.php__ templates display the actual post entries and the theme is built to handle post formats and will use the _content-(format name).php_ template if available, or fall back to the _content.php_ file.
 
-**footer.php**
+### footer.php
 Footer template, shows the footer widgets and footer navigation.
 
-**header.php**
+### header.php
 Header template, shows the title, header widgets and main navigation.
 
-**index.php**
+### index.php
 Default main template.
 
-**loop.php**
-**loop-archive.php**
-**loop-page.php**
-**loop-single.php**
-Shows the entries for the appropriate types, paginating if necessary.
+### loop.php
+### loop-archive.php
+### loop-page.php
+### loop-single.php
+Shows the entries for the approriate types, paginating if necessary.
 
-**page.php**
-Main template for displaying a page entry. If you want to modify the look of a page, you should override the __content-page.php__ file instead of this one.
+### page.php
+Main template for displaying a page entry. If you want to modify the look of a page, you should override the _content-page.php_ file instead of this one.
 
-**single.php**
-Main template for displaying a single post entry. If you want to modify the look of a page, you should create a __content-page.php__ file instead of this modifying this one.
+### single.php
+Main template for displaying a single post entry. If you want to modify the look of a page, you should create a _content-page.php_ file instead of this modifying this one.
 
 ## TODO
 
