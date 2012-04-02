@@ -4,8 +4,8 @@
  * Author: wp960
  * Author URI: https://github.com/wp960
  * Description: The 960 Grid System is an effort to streamline web development workflow by providing commonly used dimensions, based on a width of 960 pixels. There are two variants: 12 and 16 columns, which can be used separately or in tandem. This theme has taken that concept and extended upon it. Allowing for customization of the amount of columns and the base width.
- * Version: .02
- * Tags: grid, white, framework
+ * Version: 0.3
+ * Tags: 960, grid, system, white, framework, boilerplate
  */
 
 @import url('css/reset.css');
