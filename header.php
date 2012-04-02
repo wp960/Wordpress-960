@@ -12,7 +12,7 @@
 			<header>
 
 				<!-- Site Description & Title -->
-				<hgroup id="header">
+				<hgroup id="header" class="grid_12 alpha omega">
 					<h1><a href="<?php echo site_url(); ?>"><?php bloginfo('title'); ?></a></h1>
 					<?php
 					$description = get_bloginfo('description');
@@ -37,7 +37,7 @@
 				<div class="clear"></div>
 
 				<!-- Header Widgets -->
-				<aside>
+				<aside class="grid_12 alpha omega">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header') ) : ?><?php endif; ?>
 					<div class="clear"></div>
 				</aside>
