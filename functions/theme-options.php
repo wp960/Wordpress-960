@@ -1,4 +1,9 @@
 <?php
+/**
+ * Defines the theme options. Based on the sample options page: http://themeshaper.com/2010/06/03/sample-theme-options/
+ *
+ * @package WordPress-960
+ */
 
 add_action( 'admin_init', 'theme_options_init' );
 add_action( 'admin_menu', 'theme_options_add_page' );

@@ -1,4 +1,12 @@
-<!-- Blog post -->
+<?php
+/**
+ * Template for the contents of a page.
+ *
+ * @package WordPress-960
+ */
+?>
+
+<!-- Page -->
 <article class="post">
 
 	<h2 class="title">

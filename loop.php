@@ -1,3 +1,11 @@
+<?php
+/**
+ * Generic loop template, used when no other loop template is available.
+ *
+ * @package WordPress-960
+ */
+?>
+
 <?php if ( is_search() ) : ?>
 	<!-- Search form -->
 	<h2><?php _e( 'Search' ); ?></h2>

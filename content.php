@@ -1,3 +1,11 @@
+<?php
+/**
+ * Template for a generic post.
+ *
+ * @package WordPress-960
+ */
+?>
+
 <!-- Blog post -->
 <article class="post">
 

@@ -1,3 +1,11 @@
+<?php
+/**
+ * Loop template for the archive page.
+ *
+ * @package WordPress-960
+ */
+?>
+
 <!-- Custom Title -->
 <?php if ( is_category() ) : ?>
 	<h2><?php _e('Category: '); single_cat_title(); ?></h2>

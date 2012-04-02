@@ -1,3 +1,12 @@
+<?php
+/**
+ * Template for the footer of the website. Closes all tags opened in the header.php file
+ *
+ * @package WordPress-960
+ * @see header.php
+ */
+?>
+
 			</div>
 			<footer>
 

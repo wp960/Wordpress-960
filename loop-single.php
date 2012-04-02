@@ -1,3 +1,11 @@
+<?php
+/**
+ * Loop template for a single post.
+ *
+ * @package WordPress-960
+ */
+?>
+
 <!-- The loop -->
 <?php if ( have_posts() ) :
 while ( have_posts() ) {

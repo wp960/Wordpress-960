@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+/**
+ * Template for the header of the website. Sets the meta information and opens up a bunch of wrapper elements.
+ *
+ * @package WordPress-960
+ * @see footer.php
+ */
+?><!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />

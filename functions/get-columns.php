@@ -1,11 +1,11 @@
 <?php 
-
 /**
  * Builds the correct amount of columns based on the theme options.
  *
- * @param string $loop (optional) Which loop to get the contents for
  * @package WordPress-960
  * @author Michael Enger <mike@thelonelycoder.com>
+ *
+ * @param string $loop (optional) Which loop to get the contents for
  */
 
 if ( !function_exists( 'wp960_get_columns' ) ) {

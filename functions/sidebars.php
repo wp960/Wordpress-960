@@ -1,6 +1,10 @@
 <?php
+/**
+ * Registers the sidebars available in the theme.
+ *
+ * @package WordPress-960
+ */
 
-// Register sidebars
 if ( !function_exists('register_cp_sidebars') ) {
 	function register_cp_sidebars() {
 		register_sidebar(array(
@@ -33,4 +37,5 @@ if ( !function_exists('register_cp_sidebars') ) {
 		));
 	}
 }
-add_action('init', 'register_cp_sidebars', 1);
+
+add_action( 'init', 'register_cp_sidebars', 1 );
