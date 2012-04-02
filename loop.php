@@ -8,7 +8,7 @@
 <?php if ( have_posts() ) :
 while ( have_posts() ) {
 	the_post();
-	get_template_part( 'content', 'index' );
+	wp960_get_content( 'index' );
 }
 else : ?>
 	<p>Sorry, no posts match your criteria.</p>

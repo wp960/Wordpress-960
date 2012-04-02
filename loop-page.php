@@ -2,7 +2,7 @@
 <?php if ( have_posts() ) :
 while ( have_posts() ) {
 	the_post();
-	get_template_part( 'content', 'page' );
+	wp960_get_content( 'page' );
 }
 else: ?>
 	<p>Sorry, no posts match your criteria.</p>
