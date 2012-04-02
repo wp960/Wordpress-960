@@ -10,7 +10,7 @@
 
 if ( !function_exists( 'wp960_get_columns' ) ) {
 	function wp960_get_columns( $loop = 'index' ) {
-		$options = get_option( '960gs_theme_options' );
+		$options = get_option( 'wp960_theme_options' );
 		$sidebars = ! empty( $options['sidebars'] ) ? $options['sidebars'] : 'right';
 		$grid = $class = 0;
 		

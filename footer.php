@@ -10,7 +10,7 @@
 				<!-- Footer Navigation -->
 				<div class="grid_12 alpha omega">
 					<?php
-					$options = get_option( '960gs_theme_options' );
+					$options = get_option( 'wp960_theme_options' );
 					if ( $options['footer_navigation'] ) {
 						wp_nav_menu( array(
 							'theme_location' => 'footer',
