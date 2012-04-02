@@ -1,5 +1,4 @@
 <?php
-<?php
 /**
  * Registers the menus available for this theme.
  *
