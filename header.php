@@ -44,3 +44,6 @@
 
 			</header>
 			<div class="clear"></div>
+
+			<!-- Content Wrapper -->
+			<div id="content" class="content-wrapper">
