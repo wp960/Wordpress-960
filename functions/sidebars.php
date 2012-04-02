@@ -5,8 +5,8 @@
  * @package WordPress-960
  */
 
-if ( !function_exists('register_cp_sidebars') ) {
-	function register_cp_sidebars() {
+if ( !function_exists('wp960_register_sidebars') ) {
+	function wp960_register_sidebars() {
 		register_sidebar(array(
 			'name' => 'Right Sidebar',
 			'before_widget' => '<div class="sidebar widget %2$s">',
@@ -38,4 +38,4 @@ if ( !function_exists('register_cp_sidebars') ) {
 	}
 }
 
-add_action( 'init', 'register_cp_sidebars', 1 );
+add_action( 'init', 'wp960_register_sidebars', 1 );
