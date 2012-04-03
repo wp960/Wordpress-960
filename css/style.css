@@ -19,6 +19,25 @@
 }
 
 /* --------------------------------
+   Meta Data
+   -------------------------------- */
+
+.post-meta {
+	list-style-type: none;
+}
+	.post-meta li {
+		display: inline;
+		margin-left: 0;
+	}
+	.post-meta li:before {
+		content: '·';
+		margin: 0 0.5em;
+	}
+	.post-meta li:first-child:before {
+		display: none;
+	}
+
+/* --------------------------------
    Navigation
    -------------------------------- */
 

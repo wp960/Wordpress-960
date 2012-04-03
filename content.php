@@ -25,9 +25,6 @@
 		<?php the_content( __( 'Read more &raquo;', 'wp960' ) ); ?>
 	</div>
 	
-	<p class="meta">
-		<span class="category"><?php _e( 'Filed under', 'wp960' ); ?> <?php the_category(', '); ?></span>
-		<span class="tags"><?php _e( 'Tagged with', 'wp960' ); ?> <?php the_tags(', '); ?></span>
-	</p>
+	<?php get_template_part( 'meta', 'index' ); ?>
 	
 </article>
