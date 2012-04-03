@@ -1,5 +1,25 @@
 /* --------------------------------
-   Basic Styles
+   Alignment
+   -------------------------------- */
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 0.5em;
+}
+
+.alignright {
+	float: right;
+	margin-left: 0.5em;
+}
+
+/* --------------------------------
+   Navigation
    -------------------------------- */
 
 nav {}
@@ -12,11 +32,14 @@ nav {}
 			margin-right: 0.5em;
 		}
 
+/* --------------------------------
+   Pagination
+   -------------------------------- */
+
 .pagination {
 	list-style-type: none;
 	text-align: center;
 }
-
 	.pagination li {
 		display: inline;
 		margin: 0 0.5em;
