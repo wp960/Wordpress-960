@@ -45,7 +45,10 @@ if ( !function_exists( 'wp960_get_columns' ) ) {
 		}
 		?>
 		<div id="wp960-blog-content" class="<?php printf( 'grid_%d %s', $grid, $class ); ?>">
-			<?php get_template_part( 'loop', $loop ); ?>
+			<?php
+			get_template_part( 'loop', $loop );
+			get_template_part( 'pagination', $loop );
+			?>
 		</div>
 		<?php
 		
