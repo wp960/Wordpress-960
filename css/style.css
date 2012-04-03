@@ -11,3 +11,13 @@ nav {}
 			margin-left: 0;
 			margin-right: 0.5em;
 		}
+
+.pagination {
+	list-style-type: none;
+	text-align: center;
+}
+
+	.pagination li {
+		display: inline;
+		margin: 0 0.5em;
+	}
