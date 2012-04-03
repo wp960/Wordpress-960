@@ -26,6 +26,3 @@ while ( have_posts() ) {
 else : ?>
 	<p>Sorry, no posts match your criteria.</p>
 <?php endif; ?>
-
-<!-- Pagination -->
-<?php if (function_exists("emm_paginate")) emm_paginate(); ?>

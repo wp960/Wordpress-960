@@ -7,5 +7,6 @@
 
 get_header();
 wp960_get_columns( 'archive' );
+get_template_part( 'pagination', 'archive' );
 get_footer();
 

@@ -42,6 +42,9 @@ Shows the entries for the approriate types, paginating if necessary.
 ### page.php
 Main template for displaying a page entry. If you want to modify the look of a page, you should override the _content-page.php_ file instead of this one.
 
+### pagination.php
+Template for showing the pagination links using the emm_paginate by Eric Martin.
+
 ### single.php
 Main template for displaying a single post entry. If you want to modify the look of a page, you should create a _content-page.php_ file instead of this modifying this one.
 
