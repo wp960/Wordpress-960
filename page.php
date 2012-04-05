@@ -1,4 +1,10 @@
 <?php
+/**
+ * Template for showing a page.
+ *
+ * @package WordPress-960
+ */
+
 get_header();
-get_columns('page');
+wp960_get_columns( 'page' );
 get_footer();

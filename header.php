@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+/**
+ * Template for the header of the website. Sets the meta information and opens up a bunch of wrapper elements.
+ *
+ * @package WordPress-960
+ * @see footer.php
+ */
+?><!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -12,7 +19,7 @@
 			<header>
 
 				<!-- Site Description & Title -->
-				<hgroup id="header">
+				<hgroup id="header" class="grid_12 alpha omega">
 					<h1><a href="<?php echo site_url(); ?>"><?php bloginfo('title'); ?></a></h1>
 					<?php
 					$description = get_bloginfo('description');
@@ -37,10 +44,13 @@
 				<div class="clear"></div>
 
 				<!-- Header Widgets -->
-				<aside>
+				<aside class="grid_12 alpha omega">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header') ) : ?><?php endif; ?>
 					<div class="clear"></div>
 				</aside>
 
 			</header>
 			<div class="clear"></div>
+
+			<!-- Content Wrapper -->
+			<div id="content" class="content-wrapper">

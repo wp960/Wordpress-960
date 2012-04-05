@@ -1,5 +1,10 @@
 <?php
-get_header();
-get_columns('index');
-get_footer();
+/**
+ * Generic template used when no other template is available.
+ *
+ * @package WordPress-960
+ */
 
+get_header();
+wp960_get_columns( 'index' );
+get_footer();

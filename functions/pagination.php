@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Retrieve or display pagination code.
  *
