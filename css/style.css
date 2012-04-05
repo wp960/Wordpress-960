@@ -1,5 +1,44 @@
 /* --------------------------------
-   Basic Styles
+   Alignment
+   -------------------------------- */
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 0.5em;
+}
+
+.alignright {
+	float: right;
+	margin-left: 0.5em;
+}
+
+/* --------------------------------
+   Meta Data
+   -------------------------------- */
+
+.post-meta {
+	list-style-type: none;
+}
+	.post-meta li {
+		display: inline;
+		margin-left: 0;
+	}
+	.post-meta li:before {
+		content: '·';
+		margin: 0 0.5em;
+	}
+	.post-meta li:first-child:before {
+		display: none;
+	}
+
+/* --------------------------------
+   Navigation
    -------------------------------- */
 
 nav {}
@@ -11,3 +50,16 @@ nav {}
 			margin-left: 0;
 			margin-right: 0.5em;
 		}
+
+/* --------------------------------
+   Pagination
+   -------------------------------- */
+
+.pagination {
+	list-style-type: none;
+	text-align: center;
+}
+	.pagination li {
+		display: inline;
+		margin: 0 0.5em;
+	}

@@ -1,12 +1,16 @@
 <?php 
-
 /**
  * Builds the correct amount of columns based on the theme options.
+ *
+ * @package WordPress-960
+ * @author Michael Enger <mike@thelonelycoder.com>
+ *
  * @param string $loop (optional) Which loop to get the contents for
  */
-if ( !function_exists( 'get_columns' ) ) {
-	function get_columns( $loop = 'index' ) {
-		$options = get_option( '960gs_theme_options' );
+
+if ( !function_exists( 'wp960_get_columns' ) ) {
+	function wp960_get_columns( $loop = 'index' ) {
+		$options = get_option( 'wp960_theme_options' );
 		$sidebars = ! empty( $options['sidebars'] ) ? $options['sidebars'] : 'right';
 		$grid = $class = 0;
 		
@@ -41,7 +45,10 @@ if ( !function_exists( 'get_columns' ) ) {
 		}
 		?>
 		<div id="wp960-blog-content" class="<?php printf( 'grid_%d %s', $grid, $class ); ?>">
-			<?php get_template_part( 'loop', $loop ); ?>
+			<?php
+			get_template_part( 'loop', $loop );
+			get_template_part( 'pagination', $loop );
+			?>
 		</div>
 		<?php
 		
