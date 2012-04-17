@@ -3,19 +3,26 @@
    -------------------------------- */
 
 .aligncenter {
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 12px;
 }
 
 .alignleft {
 	float: left;
-	margin-right: 0.5em;
+	margin-right: 12px;
 }
 
 .alignright {
 	float: right;
-	margin-left: 0.5em;
+	margin-left: 12px;
+}
+
+.aligncenter,
+.alignleft,
+.alignright {
+	display: block;
+	margin-bottom: 12px;
 }
 
 /* --------------------------------
