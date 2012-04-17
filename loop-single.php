@@ -14,5 +14,5 @@ while ( have_posts() ) {
 	comments_template( '', true );
 }
 else: ?>
-	<p>Sorry, no posts match your criteria.</p>
+	<p><?php _e( 'Sorry, no posts match your criteria.', 'wp960' ); ?></p>
 <?php endif; ?>

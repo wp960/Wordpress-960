@@ -13,9 +13,9 @@
 	<li class="category"><?php _e( 'Filed under', 'wp960' ); ?> <?php the_category(', '); ?></li>
 	<!-- Date/Time -->
 	<?php $time = get_the_time('U'); ?>
-	<li class="time">Posted on <time datetime="<?php echo date('c', $time); ?>"><?php echo date('F jS, Y', $time) ?></time></li>
+	<li class="time"><?php _e( 'Posted on', 'wp960' ); ?> <time datetime="<?php echo date('c', $time); ?>"><?php echo date('F jS, Y', $time) ?></time></li>
 	<!-- Author -->
-	<li class="author">Written by <?php the_author_posts_link() ?></li>
+	<li class="author"><?php _e( 'Written by', 'wp960' ); ?> <?php the_author_posts_link() ?></li>
 	<!-- Comments -->
 	<li class="comments"><?php comments_popup_link( __( 'Leave a comment', 'wp960' ), __( '1 Comment', 'wp960' ), __( '% Comments', 'wp960' ) ); ?></li>
 </ul>

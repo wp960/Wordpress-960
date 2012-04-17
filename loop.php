@@ -19,5 +19,5 @@ while ( have_posts() ) {
 	wp960_get_content( 'index' );
 }
 else : ?>
-	<p>Sorry, no posts match your criteria.</p>
+	<p><?php _e( 'Sorry, no posts match your criteria.', 'wp960' ); ?></p>
 <?php endif; ?>

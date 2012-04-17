@@ -1,0 +1,147 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress 960\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-17 10:22+0100\n"
+"PO-Revision-Date: 2012-04-17 10:22+0100\n"
+"Last-Translator: Michael Enger <mike@thelonelycoder.com>\n"
+"Language-Team: WordPress 960 Team\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: content-page.php:13
+#: content.php:13
+msgid "Permanent Link to "
+msgstr ""
+
+#: content.php:20
+#: meta.php:20
+msgid "Leave a comment"
+msgstr ""
+
+#: content.php:20
+#: meta.php:20
+msgid "1 Comment"
+msgstr ""
+
+#: content.php:20
+#: meta.php:20
+msgid "% Comments"
+msgstr ""
+
+#: content.php:21
+msgid "Edit this post"
+msgstr ""
+
+#: content.php:25
+msgid "Read more &raquo;"
+msgstr ""
+
+#: loop-archive.php:11
+msgid "Category: "
+msgstr ""
+
+#: loop-archive.php:13
+msgid "Tag: "
+msgstr ""
+
+#: loop-archive.php:17
+msgid "Author: "
+msgstr ""
+
+#: loop-archive.php:27
+#: loop-page.php:16
+#: loop-single.php:17
+#: loop.php:22
+msgid "Sorry, no posts match your criteria."
+msgstr ""
+
+#: loop.php:11
+msgid "Search"
+msgstr ""
+
+#: meta.php:11
+msgid "Tagged with"
+msgstr ""
+
+#: meta.php:13
+msgid "Filed under"
+msgstr ""
+
+#: meta.php:16
+msgid "Posted on"
+msgstr ""
+
+#: meta.php:18
+msgid "Written by"
+msgstr ""
+
+#: functions/get-columns.php:22
+#: functions/theme-options.php:67
+msgid "Left Sidebar"
+msgstr ""
+
+#: functions/get-columns.php:59
+#: functions/theme-options.php:71
+msgid "Right Sidebar"
+msgstr ""
+
+#: functions/menus.php:11
+msgid "Header Navigation"
+msgstr ""
+
+#: functions/menus.php:12
+msgid "Footer Navigation"
+msgstr ""
+
+#: functions/pagination.php:39
+msgid "<li class=\"unavailable\"></li>"
+msgstr ""
+
+#: functions/pagination.php:40
+msgid "&raquo;"
+msgstr ""
+
+#: functions/pagination.php:40
+msgid "&laquo"
+msgstr ""
+
+#: functions/theme-options.php:22
+#: functions/theme-options.php:37
+msgid "WordPress 960 Theme Options"
+msgstr ""
+
+#: functions/theme-options.php:22
+msgid "960 Theme Options"
+msgstr ""
+
+#: functions/theme-options.php:40
+msgid "Options saved"
+msgstr ""
+
+#: functions/theme-options.php:51
+msgid "Navigation"
+msgstr ""
+
+#: functions/theme-options.php:54
+msgid "Show footer navigation"
+msgstr ""
+
+#: functions/theme-options.php:63
+msgid "Single Column"
+msgstr ""
+
+#: functions/theme-options.php:75
+msgid "Three Columns "
+msgstr ""
+
+#: functions/theme-options.php:80
+#: functions/theme-options.php:82
+msgid "Columns"
+msgstr ""
+
+#: functions/theme-options.php:108
+msgid "Save Options"
+msgstr ""
+
