@@ -20,6 +20,14 @@ This theme is split up into tons of templates, which makes it easier to override
 ### archive.php
 Main template for showing an archive page of posts, such as by date, category, tags or author.
 
+### comment.php
+### comment-pingback.php
+### comment-trackback.php
+Shows a single comment based on the type.
+
+### comments.php
+Template for viewing and adding comments.
+
 ### content.php
 ### content-page.php
 The __content-*.php__ templates display the actual post entries and the theme is built to handle post formats and will use the _content-(format name).php_ template if available, or fall back to the _content.php_ file.
