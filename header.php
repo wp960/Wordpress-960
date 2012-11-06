@@ -22,9 +22,10 @@
 				<hgroup id="header" class="grid_12 alpha omega">
 					<h1><a href="<?php echo site_url(); ?>"><?php bloginfo('title'); ?></a></h1>
 					<?php
+					// Description is actually labelled "Tagline" in Wordpress 3.x
 					$description = get_bloginfo('description');
 					if (! empty($description)) : ?>
-						<h4 class="subheader"><?php $description; ?></h4>
+						<h4 class="subheader"><?php echo $description; ?></h4>
 					<?php endif; ?>
 				</hgroup>
 
