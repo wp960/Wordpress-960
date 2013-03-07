@@ -58,8 +58,8 @@ if ( !function_exists('wp960_theme_options_do_page') ) {
 					<!-- Sidebars -->
 					<?php 
 					$sidebar_options = array(
-						'none' => array(
-							'value' => 'none',
+						'no_columns' => array(
+							'value' => 'no_columns',
 							'label' => __( 'Single Column', 'wp960' )
 						),
 						'left' => array(
@@ -127,7 +127,7 @@ if ( !function_exists('wp960_theme_options_validate') ) {
 		// Our radio option must actually be in our array of radio options
 		if ( ! isset( $input['sidebars'] ) )
 			$input['sidebars'] = null;
-		if ( array_search( $input['sidebars'], array( 'none', 'right', 'left', 'both' ) ) === false )
+		if ( array_search( $input['sidebars'], array( 'no_columns', 'right', 'left', 'both' ) ) === false )
 			$input['sidebars'] = null;
 	
 		return $input;
